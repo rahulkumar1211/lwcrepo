@@ -1,0 +1,14 @@
+<template>
+    <lightning-card>
+        <div class="slds-p-around_medium">
+            <lightning-datatable
+                        columns={columns}
+                        data={contactData.data}
+                        key-field="Id">
+            </lightning-datatable>
+            <template if:true={errors}>
+                <p>{errors}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
